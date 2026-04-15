@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivir Seguros</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+.header img {
+    width: 220px;
+}
+
+.name {
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.role {
+    color: #2e6da4;
+    font-weight: 500;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.whatsapp { background: #25D366; }
+.call { background: #2e6da4; }
+.email { background: #444; }
+
+/* SECTIONS */
+.section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #2e6da4;
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.service {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* ADDRESS */
+.address {
+    white-space: pre-line;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* ALLIES */
+.carousel {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.track {
+    display: flex;
+    width: calc(200px * 20);
+    animation: scroll 25s linear infinite;
+}
+
+.logo {
+    width: 180px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    background: #111;
+    color: white;
+}
+
+.footer a {
+    color: gold;
+    text-decoration: none;
+}
+
+/* ANIMATION */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="logo.jpg" alt="Vivir Seguros">
+
+    <div class="name">Paola Andrea Goyes</div>
+    <div class="role">Gerente Comercial</div>
+
+    <div class="buttons">
+        <a class="btn whatsapp" href="https://wa.me/573117791708" target="_blank">WhatsApp</a>
+        <a class="btn call" href="tel:3117791708">Llamar</a>
+        <a class="btn email" href="mailto:vivirsegurosgerenciacomercial@gmail.com">Email</a>
+    </div>
+</div>
+
+<!-- QUIENES SOMOS -->
+<div class="section">
+    <h2>Quiénes Somos</h2>
+    <p>
+        Somos una Agencia de Seguros especializada en asesoría jurídica y técnica en riesgos y seguros, con cobertura nacional.
+    </p>
+    <p><strong>“Protección, tranquilidad y respaldo para tus proyectos de vida.”</strong></p>
+</div>
+
+<!-- SERVICIOS -->
+<div class="section">
+    <h2>Servicios</h2>
+
+    <div class="services">
+        <div class="service">Riesgos Laborales</div>
+        <div class="service">Seguros Educativos</div>
+        <div class="service">Cumplimiento de Contratos</div>
+        <div class="service">Responsabilidad Civil</div>
+        <div class="service">Automóviles</div>
+        <div class="service">Propiedad e Ingeniería</div>
+        <div class="service">Transporte</div>
+        <div class="service">Vida y Personas</div>
+        <div class="service">Salud</div>
+    </div>
+</div>
+
+<!-- DIRECCION -->
+<div class="section">
+    <h2>Ubicación</h2>
+    <div class="address">
+Local 1, Edificio Villa Isabel, Barrio Centro - San Juan de Pasto
+Carrera 7 # 25-31 – Ipiales
+Paisaje de Pangola casa 87 - Vía Cali - Jamundí
+    </div>
+</div>
+
+<!-- ALIADOS -->
+<div class="section">
+    <h2>Empresas Aliadas</h2>
+
+    <div class="carousel">
+        <div class="track">
+
+            <!-- 10 logos -->
+            <div class="logo"><img src="foto1.jpg"></div>
+            <div class="logo"><img src="foto2.jpg"></div>
+            <div class="logo"><img src="foto3.jpg"></div>
+            <div class="logo"><img src="foto4.jpg"></div>
+            <div class="logo"><img src="foto5.jpg"></div>
+            <div class="logo"><img src="foto6.jpg"></div>
+            <div class="logo"><img src="foto7.jpg"></div>
+            <div class="logo"><img src="foto8.jpg"></div>
+            <div class="logo"><img src="foto9.jpg"></div>
+            <div class="logo"><img src="foto10.jpg"></div>
+
+            <!-- duplicados para scroll infinito -->
+            <div class="logo"><img src="foto1.jpg"></div>
+            <div class="logo"><img src="foto2.jpg"></div>
+            <div class="logo"><img src="foto3.jpg"></div>
+            <div class="logo"><img src="foto4.jpg"></div>
+            <div class="logo"><img src="foto5.jpg"></div>
+            <div class="logo"><img src="foto6.jpg"></div>
+            <div class="logo"><img src="foto7.jpg"></div>
+            <div class="logo"><img src="foto8.jpg"></div>
+            <div class="logo"><img src="foto9.jpg"></div>
+            <div class="logo"><img src="foto10.jpg"></div>
+
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    Powered by <a href="https://integral360.com.co" target="_blank">Integral360</a>
+</div>
+
+</body>
+</html>
